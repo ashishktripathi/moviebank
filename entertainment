@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr 11 12:42:58 2018
+
+@author: Ashish
+"""
+import webbrowser
+  
+    
+import media
+import fresh_tomatoes
+toy_story = media.Movie("Toy Story", "Sory of a boy and his toy", "https://en.wikipedia.org/wiki/Toy_Story#/media/File:Toy_Story.jpg", "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+# when we execute this line, first thing is init function get called and it look for arguments
+# which we are providing. 
+#toystory is working as an instance of the class Movie.
+print(toy_story.storyline)
+
+avatar = Movie("Avatar", "Story of a marine in alien world",
+               "https://en.wikipedia.org/wiki/Avatar_(2009_film)#/media/File:Avatar-Teaser-Poster.jpg",
+               "https://www.youtube.com/watch?v=5PSNL1qE6VY")
+
+print(avatar.storyline)
+avatar.storyline
+
+# create a list of having all the movies name
+movies = [toy_story, avatar]
+fresh_tomatoes.open_movies_page(movies)
+
+media.Movie.VALID_RATINGS
+media.Movie.__doc__
+media.Movie.__module__
